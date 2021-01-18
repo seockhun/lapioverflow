@@ -16,27 +16,22 @@ export const HeaderMenu = styled.section`
     height: 50px;
     background: rgb(75, 51, 162);
     display: flex;
+    padding-left: 20px;
     align-items: center;
     & a{
+        width: 114px;
         display: block;
         text-decoration: none;
-        height:100%;
+        height:93%;
         color: white;
-        padding: 0 10px;
+        justify-content: center;
+        border-bottom: 3px solid rgb(75,51,162);
         background: none;
-        border: none;
         outline: none;
         font-weight: bold;
-        margin-left: 20px;
         display: flex;
         align-items: center;
         cursor: pointer;
-        &:hover{
-            background: #c3c3c3a3;
-        }
-        &:active{
-            background: #c3c3c370;
-        }
     }
 `
 
@@ -57,8 +52,8 @@ export const AddBtn = styled.button`
     right: 0;
     margin-right: 40px;
     margin-top: 45px;
-    &:hover{
-
+    & a{
+        border: none;
     }
 `
 

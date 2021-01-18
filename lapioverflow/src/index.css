@@ -12,5 +12,6 @@ code {
     monospace;
 }
 .active{
-  color: yellow !important;
+  border-bottom: 3px solid white !important;
+  transition: 0.9s !important;
 }

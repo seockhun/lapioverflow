@@ -1,8 +1,7 @@
-import React, { Component, useEffect, useState } from "react";
+import React from "react";
 import * as S from "../style/Header.js";
 import add from "../assets/add.png";
-import { Content } from "../style/Adver.js";
-import { Link, NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
     return (
@@ -16,7 +15,9 @@ function Header() {
                 <NavLink to="/list">QUESTIONS</NavLink>
 
                 <S.AddBtn>
-                    <S.Plus src={add}></S.Plus>
+                    <NavLink to="/write"><S.Plus src={add} onMouseOver={() => {
+
+                    }} /></NavLink>
                 </S.AddBtn>
             </S.HeaderMenu>
         </>
